@@ -1,49 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Привет! Я Ваше Имя</h1>
-        <p>Добро пожаловать на мой сайт!</p>
-        <nav>
-            <a href="#portfolio">Портфолио</a>
-            <a href="#blog">Блог</a>
-            <a href="#contact">Контакты</a>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио - Алексей Смирнов</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Навигация -->
+    <header class="bg-dark text-light py-3">
+      <nav class="container navbar navbar-expand-lg navbar-dark">
+        <a href="#home" class="navbar-brand">Kirill Glushkov : Hanakorov</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Обо мне</a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">Опыт</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Проекты</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <section id="portfolio">
-        <h2>Мои проекты</h2>
-        <p>Вот несколько проектов, над которыми я работал:</p>
-        <ul>
-            <li>Проект 1: <a href="https://example.com">ссылка</a></li>
-            <li>Проект 2: <a href="https://example.com">ссылка</a></li>
-            <li>Проект 3: <a href="https://example.com">ссылка</a></li>
-        </ul>
+    <!-- Главный блок -->
+    <section id="home" class="bg-purple text-light text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Привет! Я Кирилл, или же Hanakorov</h1>
+        <p class="lead">Фулл-стак разработчик. Computer Science</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-3"
+          >Связаться со мной</a
+        >
+      </div>
     </section>
 
-    <section id="blog">
-        <h2>Блог</h2>
-        <p>Последние посты:</p>
-        <ul>
-            <li><a href="#">Пост 1</a> — 01.01.2023</li>
-            <li><a href="#">Пост 2</a> — 02.02.2023</li>
-            <li><a href="#">Пост 3</a> — 03.03.2023</li>
-        </ul>
+    <!-- Обо мне -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center text-purple mb-4">Обо мне</h2>
+        <p>
+          Меня зовут Кирилл, я увлечен разработкой приложений и созданием
+          уникальных решений. У меня есть опыт работы с такими языками и
+          технологиями, как Java, C-образные языки, фреймворки для создания веба
+          и базы данных. Для меня главное - технологический прорыв в отрасли и
+          помощь всем.
+        </p>
+        <p>
+          В свободное время я изучаю новые технологии, создаю пет-проекты и
+          активно развиваюсь в области mashine learning. Мне нравится делиться
+          своими знаниями и участвовать в сообществах разработчиков.
+        </p>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Связаться со мной</h2>
-        <p>Можете написать мне на <a href="mailto:your-email@example.com">email@example.com</a></p>
+    <!-- Опыт работы -->
+    <section id="experience" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center text-purple mb-4">Опыт работы</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="text-dark">
+              Помощник по управлению сервера на Minecraft :]
+            </h4>
+            <p><em>2021 - 2023</em></p>
+            <p>
+              Предлагал новые идеи, занимал лидерскую должность в команде
+              владельцев. Опыт в команде.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="text-dark">Проекты в учёбе и олимпиады</h4>
+            <p><em>2019 - Сейчас</em></p>
+            <p>
+              Создавал пет-проекты. Участвовал в различных олимпиадах и тестах.
+              Проходил экзамены по информатике
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Ваше Имя. Все права защищены.</p>
+    <!-- Проекты -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="text-center text-purple mb-4">Проекты</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">СКОРО СКОРО СКОРО</h5>
+                <p class="card-text">Скоро, здесь что-то будет....</p>
+                <a href="#" class="btn btn-primary">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">СКОРО СКОРО СКОРО</h5>
+                <p class="card-text">Скоро, здесь что-то будет....</p>
+                <a href="#" class="btn btn-primary">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="bg-purple text-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Контакты</h2>
+        <p class="text-center">
+          Напишите мне на
+          <a href="mailto:alexey@example.com" class="text-light"
+            >zetpetyt@gmail.com</a
+          >
+          или свяжитесь через социальные сети:
+        </p>
+        <div class="text-center">
+          <a href="#" class="text-light mx-2">LinkedIn</a> |
+          <a href="#" class="text-light mx-2">GitHub</a> |
+          <a href="#" class="text-light mx-2">Twitter</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-3 text-center">
+      <p>&copy; 2024 Кирилл Глушков. Все права защищены.</p>
     </footer>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
