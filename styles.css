@@ -1,9 +1,9 @@
 /* Основной стиль и настройки цвета */
 :root {
-  --purple: #6a0dad;
+  --purple: #5d0c97;
   --light-purple: #8c4ef8;
-  --text-color: #333;
-  --bg-color: #f4f4f9;
+  --text-color: #232323;
+  --bg-color: #d8c4de;
 }
 
 body {
@@ -40,12 +40,12 @@ section {
 }
 
 footer {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 /* Навигация */
 .navbar-brand {
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 1.5rem;
   color: #ffffff !important;
 }
@@ -59,11 +59,11 @@ footer {
 }
 
 .navbar-nav .nav-link {
-  font-size: 1.1rem;
-  margin: 0 10px;
+  font-size: 1.3rem;
+  margin: 0 5px;
   position: relative;
-  color: #ddd;
-  transition: color 0.3s ease;
+  color: #b0b0b0;
+  transition: color 0.9s ease;
 }
 
 .navbar-nav .nav-link:hover {
@@ -78,9 +78,9 @@ footer {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
+  height: 5px;
   background: var(--light-purple);
-  transition: width 0.3s ease;
+  transition: width 0.9s ease;
   position: absolute;
   bottom: -5px;
   left: 0;
